@@ -1,0 +1,88 @@
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project
+$ mkdir assignment
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project
+$ cd assignment/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ mkdir source
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ mkdir destination
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ ls
+destination/  source/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ cd source
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/source
+$ touch write.txt
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/source
+$ ls
+write.txt
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/source
+$ cat >write.txt
+hi there im nothing
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/source
+$ cd..
+bash: cd..: command not found
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/source
+$ cd ..
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ cp source/write.txt  destination/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ cd destination/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ ls
+write.txt
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ rm write.txt 
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ ls
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ cd ..
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ mv source/write.txt  destination/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ cd destination/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ ls
+write.txt
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ cd ..
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment
+$ cd destination/
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ cat > write.txt
+function up is a very good bootcamp
+function up is largeplatform
+function up consist large no of student
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$ grep "function up" write.txt
+function up is a very good bootcamp
+function up is largeplatform
+function up consist large no of student
+
+Lucky Pradhan@DESKTOP-BBQDGLH MINGW64 ~/Desktop/project/assignment/destination
+$
