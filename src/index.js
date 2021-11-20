@@ -1,4 +1,5 @@
 const express = require('express');
+const moment = require('moment');
 var bodyParser = require('body-parser');
 
 const route = require('./routes/route.js');
@@ -10,7 +11,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const midGlb= function (req, res, next) {
-    console.log("Hi I am a GLOBAL middleware");
+    let ip =req.ip
+    //console.log(ip)
+    let date = moment().format('MMMM Do YYYY, h:mm:ss a');
+    //console.log(date);
+    let search = req.url
+    //console.log(search)
+    let all = "your IP"+ip+","+"your date"+"-"+date+","+"your url"+"-"+search ;
+    console.log(all);
     //logic
     next()    
 }
@@ -25,7 +33,7 @@ mongoose.connect("mongodb+srv://users-open-to-all:hiPassword123@cluster0.uh35t.m
 
 
 
-    
+app.use(midGlb);
 app.use('/', route);
 
 app.listen(process.env.PORT || 3000, function() {
